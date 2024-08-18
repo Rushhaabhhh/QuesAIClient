@@ -32,7 +32,7 @@ function Create() {
                 return;
             }
 
-            const response = await axios.get(`http://localhost:8081/api/projects/user/${userId}`, {
+            const response = await axios.get(`https://quesai-1-demo.onrender.com/api/projects/user/${userId}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setProjects(response.data);
@@ -60,7 +60,7 @@ function Create() {
                 return;
             }
 
-            const response = await axios.post('http://localhost:8081/api/projects', { name: projectName }, {
+            const response = await axios.post('https://quesai-1-demo.onrender.com/api/projects', { name: projectName }, {
                 headers: { Authorization: `Bearer ${token}` }
             });
 

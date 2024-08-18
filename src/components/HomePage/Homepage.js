@@ -43,7 +43,7 @@ const HomePage = () => {
     const fetchUserInfo = async () => {
         try {
             const userId = localStorage.getItem('userId');
-            const response = await axios.get(`http://localhost:8081/api/users/${userId}`, {
+            const response = await axios.get(`https://quesai-1-demo.onrender.com/api/users/${userId}`, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
             });
             setUser(response.data);
@@ -63,7 +63,7 @@ const HomePage = () => {
 
     const fetchPodcasts = async (projectId) => {
         try {
-            const response = await axios.get(`http://localhost:8081/api/podcasts/${projectId}`, {
+            const response = await axios.get(`https://quesai-1-demo.onrender.com/api/podcasts/${projectId}`, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
             });
             setPodcasts(response.data);
@@ -87,7 +87,7 @@ const HomePage = () => {
 
     const handleLogout = async () => {
         try {
-            await axios.post('http://localhost:8081/api/users/logout', {}, {
+            await axios.post('https://quesai-1-demo.onrender.com/api/users/logout', {}, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
             });
             localStorage.clear();
@@ -104,7 +104,7 @@ const HomePage = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:8081/api/podcasts/${id}`, {
+            await axios.delete(`https://quesai-1-demo.onrender.com/api/podcasts/${id}`, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
             });
             const updatedPodcasts = podcasts.filter(podcast => podcast._id !== id);
@@ -148,7 +148,7 @@ const HomePage = () => {
                 throw new Error('No project ID found. Please select a project.');
             }
 
-            const response = await axios.post(`http://localhost:8081/api/podcasts/${selectedProjectId}`, formData, {
+            const response = await axios.post(`https://quesai-1-demo.onrender.com/api/podcasts/${selectedProjectId}`, formData, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                     'Content-Type': 'multipart/form-data'

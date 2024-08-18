@@ -9,7 +9,7 @@ function Register() {
 
   const onFinish = async (values) => {
     try {
-      const response = await axios.post('http://localhost:8081/api/users/register', values);
+      const response = await axios.post('https://quesai-1-demo.onrender.com/api/users/register', values);
       if (response.data.success) {
         message.success(response.data.message);
   

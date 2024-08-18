@@ -20,7 +20,7 @@ function AccountSettings() {
   useEffect(() => {
     const userId = localStorage.getItem('userId');
     if (userId) {
-      axios.get(`http://localhost:8081/api/users/${userId}`)
+      axios.get(`https://quesai-1-demo.onrender.com/api/users/${userId}`)
         .then(response => setUser({
           name: response.data.name,
           email: response.data.email,
@@ -37,7 +37,7 @@ function AccountSettings() {
   const handleSave = () => {
     const userId = localStorage.getItem('userId');
     if (userId) {
-      axios.put(`http://localhost:8081/api/users/${userId}`, { name: user.name })
+      axios.put(`https://quesai-1-demo.onrender.com/api/users/${userId}`, { name: user.name })
         .then(response => console.log('User data updated successfully:', response.data))
         .catch(error => console.error('Error updating user data:', error));
     }
@@ -45,7 +45,7 @@ function AccountSettings() {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:8081/api/users/logout', {}, {
+      await axios.post('https://quesai-1-demo.onrender.com/api/users/logout', {}, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       localStorage.clear();
