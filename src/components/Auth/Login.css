@@ -1,0 +1,218 @@
+.loginContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.loginBackground {
+  flex: 1;
+  background-image: url('../../assets/background.png'), linear-gradient(90deg, rgba(195, 126, 255, 1) 0%, rgba(58, 11, 99, 1) 100%);
+  background-size: cover;
+  background-position: center;
+  padding: 2vw;
+  box-sizing: border-box;
+  position: relative;
+  color: white;
+}
+
+.loginLogo {
+  background-image: url('../../assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 12vw;
+  height: 9vw;
+  position: absolute;
+  top: 2vw;
+  left: 5vw;
+}
+
+.loginHeaderText {
+  margin-top: 15vh;
+  font-size: 4.5vw;
+  line-height: 1.3;
+  margin-left: 3.5vw;
+  font-family: 'Circular Std', sans-serif;
+}
+
+.loginText {
+  font-size: 2vw;
+  margin-top: 3vh;
+  margin-left: 3.5vw;
+  line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
+}
+
+.loginSideSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 120px;
+}
+
+.loginSideLogo {
+  background-image: url('../../assets/side-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15vw;
+  height: 11vw;
+  margin-left: 150px;
+}
+
+.loginSideText {
+  font-size: 2.8vw;
+  margin-bottom: 0.5vh;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(126, 34, 206, 1);
+  margin-left: 150px;
+}
+
+.loginSideName {
+  font-size: 3.7vw;
+  margin-bottom: 5vh;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(126, 34, 206, 1);
+  margin-left: 150px;
+}
+
+.loginFormContainer {
+  width: 100%;
+  max-width: 400px;
+  padding: 2vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.loginForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.loginInput {
+  padding: 1vw;
+  font-size: 1vw;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1.5vh;
+}
+
+.loginButton {
+  padding: 1vw;
+  font-size: 1.2vw;
+  color: white;
+  background: rgba(126, 34, 206, 1);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1vh;
+}
+
+.loginCreateAccount {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5vh;
+  font-size: 1.2vw;
+  margin-left: 75px;
+}
+
+.loginCreateAccountText {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+  margin-right: 0.5vw;
+}
+
+.loginCreateAccountLink {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 1.2vw;
+  margin-left: 0.5vw;
+}
+
+@media (max-width: 1024px) {
+  .loginContainer {
+    flex-direction: column;
+  }
+
+  .loginBackground, .loginSideSection {
+    width: 100%;
+  }
+
+  .loginHeaderText {
+    font-size: 6vw;
+    margin-top: 10vh;
+  }
+
+  .loginText {
+    font-size: 3vw;
+  }
+
+  .loginSideText {
+    font-size: 4vw;
+  }
+
+  .loginSideName {
+    font-size: 5vw;
+  }
+
+  .loginInput, .loginButton {
+    font-size: 2vw;
+  }
+
+  .loginCreateAccount {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginLogo {
+    width: 20vw;
+    height: 15vw;
+  }
+
+  .loginHeaderText {
+    font-size: 7vw;
+  }
+
+  .loginText {
+    font-size: 3.5vw;
+  }
+
+  .loginSideLogo {
+    width: 25vw;
+    height: 18vw;
+  }
+
+  .loginSideText {
+    font-size: 5vw;
+  }
+
+  .loginSideName {
+    font-size: 6vw;
+  }
+
+  .loginInput, .loginButton {
+    font-size: 2.5vw;
+  }
+
+  .loginCreateAccount {
+    font-size: 2.5vw;
+  }
+}

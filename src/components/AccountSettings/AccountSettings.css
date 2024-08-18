@@ -1,0 +1,135 @@
+/* General styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.user-info {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-info .email {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 300px;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+h1 i {
+  margin-right: 10px;
+}
+
+.account-settings {
+  max-width: 600px;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.user-avatar {
+  width: 350px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-left: 40px;
+}
+
+.input-group label {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.input-group input:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.save-btn {
+  background-color: #702a8e;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  margin-left: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.subscription-info {
+  border-radius: 8px;
+  background: linear-gradient(45deg,white 40%, #b989cd);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #8e44ad;
+}
+
+.subscription-info p {
+  color: #8e44ad;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.upgrade-btn {
+  background-color: #702a8e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upgrade-btn:hover {
+  background-color: #7d3c98;
+}

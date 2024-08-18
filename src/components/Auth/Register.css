@@ -1,0 +1,218 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.background {
+  flex: 1;
+  background-image: url('../../assets/background.png'), linear-gradient(90deg, rgba(195, 126, 255, 1) 0%, rgba(58, 11, 99, 1) 100%);
+  background-size: cover;
+  background-position: center;
+  padding: 2vw;
+  box-sizing: border-box;
+  position: relative;
+  color: white;
+}
+
+.logo {
+  background-image: url('../../assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 14vw;
+  height: 11vw;
+  position: absolute;
+  top: 3vw;
+  left: 5vw;
+}
+
+.headerText {
+  margin-top: 15vh;
+  font-size: 4.5vw;
+  line-height: 1.3;
+  margin-left: 3.5vw;
+  font-family: 'Circular Std', sans-serif;
+}
+
+.text {
+  font-size: 2vw;
+  margin-top: 3vh;
+  margin-left: 3.5vw;
+  line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sideSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 120px;
+}
+
+.sideLogo {
+  background-image: url('../../assets/side-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15vw;
+  height: 11vw;
+  margin-left: 150px;
+}
+
+.sideText {
+  font-size: 2.8vw;
+  margin-bottom: 0.5vh;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(126, 34, 206, 1);
+  margin-left: 150px;
+}
+
+.sideName {
+  font-size: 3.7vw;
+  margin-bottom: 5vh;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(126, 34, 206, 1);
+  margin-left: 150px;
+}
+
+.registerForm {
+  width: 100%;
+  max-width: 400px;
+  padding: 2vw;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  justify-content: center;
+}
+
+.input {
+  padding: 1vw;
+  font-size: 1vw;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1.5vh;
+}
+
+.registerButton {
+  padding: 1vw;
+  font-size: 1.2vw;
+  color: white;
+  background: rgba(126, 34, 206, 1);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1vh;
+}
+
+.createAccount {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5vh;
+  font-size: 1.2vw;
+}
+
+.createAccountText {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+  margin-right: 0.5vw;
+}
+
+.createAccountLink {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 1.2vw;
+  margin-left: 0.5vw;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .background, .sideSection {
+    width: 100%;
+  }
+
+  .headerText {
+    font-size: 6vw;
+    margin-top: 10vh;
+  }
+
+  .text {
+    font-size: 3vw;
+  }
+
+  .sideText {
+    font-size: 4vw;
+  }
+
+  .sideName {
+    font-size: 5vw;
+  }
+
+  .input, .registerButton {
+    font-size: 2vw;
+  }
+
+  .createAccount {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 20vw;
+    height: 15vw;
+  }
+
+  .headerText {
+    font-size: 7vw;
+  }
+
+  .text {
+    font-size: 3.5vw;
+  }
+
+  .sideLogo {
+    width: 25vw;
+    height: 18vw;
+  }
+
+  .sideText {
+    font-size: 5vw;
+  }
+
+  .sideName {
+    font-size: 6vw;
+  }
+
+  .input, .registerButton {
+    font-size: 2.5vw;
+  }
+
+  .createAccount {
+    font-size: 2.5vw;
+  }
+}
