@@ -20,7 +20,6 @@ const HomePage = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [uploadType, setUploadType] = useState('');
     const [user, setUser] = useState({ username: '', email: '', avatar: '' });
-    const [loading, setLoading] = useState(true);
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [selectedProjectId, setSelectedProjectId] = useState(localStorage.getItem('selectedProjectId') || '');
     const [fileList, setFileList] = useState([]);

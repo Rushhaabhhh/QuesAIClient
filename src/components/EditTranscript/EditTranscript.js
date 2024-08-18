@@ -17,15 +17,15 @@ function TranscriptPage() {
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [user, setUser] = useState({});
-  const [isUploading, setIsUploading] = useState(false);
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
 
   useEffect(() => {
-    fetchTranscript();
     fetchUserInfo();
   }, []);
+
+  
 
 
   const fetchUserInfo = async () => {
